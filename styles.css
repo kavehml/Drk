@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    width:100%;
+    background: linear-gradient(#7a48b9,#37b3d7);
+    font-family: sans-serif;
+    color:white;
+}
+#forum{
+    border : 1px solid rgb(109, 92, 109);
+    width: 480px;
+    border-radius:10px;
+}
+#header{
+    width:100%;
+    height:20%;
+    background-color:red;
+    background-color:#242156;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    width:100%;
+    height:80%;
+    background-color:yellow;
+    background-color:#2a2a68;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.question{
+    width:100%;
+    height:20%;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+.options{
+    width:100%;
+    height:50%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+button{
+    width:100px;
+    height:50px;
+    border-radius:10px;
+    background-color:white;
+    border:none;
+    transition:all 300ms ease;
+}
+input[type="text"]{
+    text-align:center;
+    width:100px;
+    height:50px;
+    border-radius:10px;
+    background-color:white;
+    border:none;
+    transition:all 300ms ease;
+    margin-top:10px;
+}
+textarea{
+    background-color:white;
+}
+textarea{
+    margin-right:50px;
+    margin-left: 50px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.8);
+}
+.buttons{
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:0px;
+    padding-bottom:20px;
+}
+
+#alret{
+    background-color:green;
+    color:black;
+    display:none;
+    animation :fade 3s forwards;
+}
+@keyframes fade{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+@media only screen and (max-width: 360px) {
+    textarea{
+        margin:0;
+        margin-left:45px;
+        width:70%;
+    }
+    #forum{
+      width:280px;    
+    }
+    button{
+        width:60px;
+        height:40px;
+    }
+    input[type="text"]{
+        width:60px;
+        height:40px;
+    }
+    body{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+  }
